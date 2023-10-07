@@ -4,6 +4,11 @@ public class Relacionais {
         int numero1 = 1;
         int numero2 = 2;
 
+        String NomeInicial = "Lamon";
+        String NomeSecundario = new String("Lamon");
+
+        System.out.println(NomeInicial.equals(NomeSecundario));
+
         if(numero1 > numero2)
             System.out.print("Numero 1 maior que numero 2");
 
