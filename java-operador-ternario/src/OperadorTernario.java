@@ -3,7 +3,7 @@ public class OperadorTernario {
 
         int valorPrimeiro, valorSegundo;
 
-        valorPrimeiro = 5;
+        valorPrimeiro = 6;
         valorSegundo = 6;
 
         int resultadoDosDOis = valorPrimeiro == valorSegundo ? 1 : 0;
