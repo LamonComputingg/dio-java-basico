@@ -1,5 +1,6 @@
 public class SmartTv {
-    public static void main(String[] args){
-        
-    }
+        boolean ligada=false;
+        int canal=1;
+        int volume =25;
 }
+
