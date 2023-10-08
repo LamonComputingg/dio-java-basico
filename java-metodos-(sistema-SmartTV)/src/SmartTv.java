@@ -8,7 +8,9 @@ public class SmartTv {
             canal++;
             System.out.println("Aumentou de canal para: " + canal);
         }
-        
+        public void diminuirCanal(){
+            
+        }
         public void aumentarVolume(){
             //volume = volume + 1;
             volume++;
