@@ -8,5 +8,7 @@ public class Usuario {
 
         smartTv.ligar();
         System.out.println("Novo Status da TV -> Ligada? " + smartTv.ligada); //10:42 assistir aula
+        smartTv.desligar();
+        System.out.println("Novo Status da TV -> Ligada? " + smartTv.ligada);
     }
 }
