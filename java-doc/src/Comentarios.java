@@ -8,7 +8,15 @@ public class Comentarios {
          * quando for necessário
          */
     }
+    /**
+     * Estas duas estrelinhas acima
+     * é para identificar que você
+     * pretende elaborar um comentário
+     * a nivel de documentação.
+     * Que incrível !!!
+     *  =)
+     */
     public void metodo(){
-        
+
     }
 }
