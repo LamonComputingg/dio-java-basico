@@ -8,4 +8,7 @@ public class Comentarios {
          * quando for necessário
          */
     }
+    public void metodo(){
+        
+    }
 }
