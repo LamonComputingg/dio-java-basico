@@ -1,17 +1,27 @@
 // SistemaMedida.java
 
-// Modo condicional if/else
+// Modo condicional switch / case
 public class SistemaMedidas {
 	public static void main(String[] args) {
 		String sigla = "M";
 
-		if(sigla == "P")
+		switch (sigla) {
+		case "P":{
 			System.out.println("PEQUENO");
-		else if(sigla == "M")
+			break;
+		}
+		case "M":{
 			System.out.println("MÉDIO");
-		else if(sigla == "G")
+			break;
+		}
+		case "G":{
 			System.out.println("GRANDE");
-		else
+			break;
+		}
+		default:
 			System.out.println("INDEFINIDO");
+		}
+			
+		
 	}
 }
