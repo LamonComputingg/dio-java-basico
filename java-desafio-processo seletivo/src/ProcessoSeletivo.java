@@ -6,6 +6,7 @@ public class ProcessoSeletivo{
         //analisarCandidato(1900.0);
         //analisarCandidato(2200.0);
         //analisarCandidato(2000.0);
+        selecaoCandidatos(); 
     }
     static void selecaoCandidatos(){
         String [] candidatos = {
@@ -23,9 +24,15 @@ public class ProcessoSeletivo{
         int candidatosSelecionados = 0;
         int candidatosAtual = 0;
         double salarioBase = 2000.0;
-        while(candidatosSelecionados < 5){
+        while(candidatosSelecionados < 5 && candidatosAtual < candidatos.length){
             String candidato = candidatos[candidatosAtual];
             double salarioPretendido = valorPretendido();
+            System.out.println("O candidato(a) " + candidato + " Solicitou este valor de salário " + salarioPretendido);
+            if(salarioBase >= salarioPretendido){
+                System.out.println("O candidato(a) " + "foi selecionado(a) para a vaga!");
+                candidatosSelecionados++;
+            }
+            candidatosAtual++;
         }
     }
     static double valorPretendido(){
@@ -34,13 +41,13 @@ public class ProcessoSeletivo{
     static void analisarCandidato(double salarioPretendido){
         double salarioBase = 2000.0;
         if(salarioBase > salarioPretendido){
-            System.out.println("LIGAR PARA O CANDIDATO!!");
+            System.out.println("LIGAR PARA 'O/A' CANDIDATO(A)!!");
 
         }else if(salarioBase == salarioPretendido){
-            System.out.println("LIGAR PARA O CANDIDATO COM CONTRA PROPOSTA!!!");
+            System.out.println("LIGAR PARA 'O/A' CANDIDATO(A) COM CONTRA PROPOSTA!!!");
         }
         else{
-            System.out.println("AGUARDANDO O RESULTADO DOS DEMAIS CANDIDATOS!!!!");
+            System.out.println("AGUARDANDO 'O/A' RESULTADO DOS DEMAIS CANDIDATOS(AS)!!!!");
         }
     }
 }
