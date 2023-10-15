@@ -6,7 +6,25 @@ public class ProcessoSeletivo{
         //analisarCandidato(1900.0);
         //analisarCandidato(2200.0);
         //analisarCandidato(2000.0);
-        selecaoCandidatos(); 
+        //selecaoCandidatos(); 
+    }
+    static void imprimirSelecionados(){
+         String [] candidatos = {
+            "Lamon",
+            "Limon",
+            "Santos",
+            "Karina",
+            "Florentino",
+            "Carmelia",
+            "Laerson",
+            "Romão",
+            "Silva",
+            "Souza"
+        };
+        System.out.println("Imprimindo a lsita de candidatos'/as' informando o indice do elemento");
+        for(int indice = 0; indice < candidatos.length; indice++){
+            System.out.println("O candidato'/a' de número " + (indice+1) + " é o " + candidatos[indice]);
+        }
     }
     static void selecaoCandidatos(){
         String [] candidatos = {
