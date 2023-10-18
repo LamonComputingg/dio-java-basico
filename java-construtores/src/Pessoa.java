@@ -3,6 +3,10 @@ public class Pessoa {
 	private String cpf;
 	private String endereco;
 	
+    public Pessoa (String cpf, String nome) {
+		this.cpf = cpf;
+		this.nome = nome;
+	}
 	public String getNome() {
 		return nome;
 	}
